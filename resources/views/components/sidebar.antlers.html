@@ -1,0 +1,33 @@
+<div class="sidebar">
+    <!-- <a href="/dashboard">
+        <span class="comment-icons d-flex" style="align-items: center; padding: 20px;">
+            <img src="/assets/logo.png" alt="Ads Logo">
+        </span>
+    </a> -->
+    {{ nav:main_nav }}
+    <div class="sidebarOption {{ if url == current_uri }}active{{ /if }}">
+        <a href="{{ url }}">
+            <span class="comment-icons d-flex" style="align-items: center; padding:15px 25px;">
+                {{ assets_field }}
+                <img class="nav-icons" src="{{ url }}" alt="{{ caption }}" />
+                {{ /assets_field }}
+                {{ title }}
+            </span>
+        </a>
+    </div>
+    {{ /nav:main_nav }}
+    <div class="">Text here</div>
+    {{ nav:side_nav }}
+    <div class="sidebarOption {{ if url == current_uri }}active{{ /if }}">
+        <a href="{{ url }}">
+            <span class="comment-icons d-flex" style="align-items: center; padding:15px 25px;">
+                {{ assets_field }}
+                <img class="nav-icons" src="{{ url }}" alt="{{ caption }}" />
+                {{ /assets_field }}
+                {{ title }}
+            </span>
+        </a>
+    </div>
+    {{ /nav:side_nav }}
+</div>
+

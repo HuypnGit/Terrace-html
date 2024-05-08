@@ -1,0 +1,62 @@
+tree:
+  -
+    id: 9be16569-3037-4a2d-964e-228e03f6f8e8
+    title: Home
+    url: /dashboard
+    data:
+      assets_field:
+        - home-1.png
+  -
+    id: 25aef777-0fc3-4a10-96b8-585340c944c2
+    title: 歯科医師専用ページ
+    url: /doctor
+    data:
+      assets_field:
+        - menu1.png
+    children:
+      -
+        id: 5a4fac31-c8b6-4b14-896a-9cf3a7e4f494
+        title: 'Tư vấn lâm sàng'
+        url: home
+      -
+        id: dce4d53c-32fa-45d9-87c6-5143b2026c24
+        title: 'Liên kết giữa bác sĩ nha khoa và phụ tá'
+        url: '2'
+        data:
+          assets_field: {  }
+      -
+        id: 69095905-3b5d-44f8-94a6-45e32c108852
+        title: 'Liên kết giữa bác sĩ nha khoa và kỹ thuật viên'
+        url: '3'
+      -
+        id: 969e0c5e-7949-44f2-ac78-eeaece0178b7
+        title: 'Blog lâm sàng (chỉ dành cho nhân viên y tế)'
+        url: '4'
+  -
+    id: ef5a69d1-c9a8-46c6-b20a-96cce3a0a2f6
+    title: スペシャリストへ相談
+    url: /doctor2
+    data:
+      assets_field:
+        - message.png
+  -
+    id: 01bba8f7-74b8-43e3-a5ae-affe108dec0f
+    title: 症例供覧
+    url: /doctor3
+    data:
+      assets_field:
+        - text_snippet.png
+  -
+    id: 0d9676b7-0da7-4a09-9c65-c0671ce07bc8
+    title: '一般患者Q&A(未実装)'
+    url: /doctor4
+    data:
+      assets_field:
+        - help_outline.png
+  -
+    id: 6e4d3d53-b311-4dd9-a18a-1ee18b6ea134
+    title: 一般歯科資料
+    url: /doctor5
+    data:
+      assets_field:
+        - assignment.png

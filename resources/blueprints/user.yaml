@@ -1,0 +1,37 @@
+title: User
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: name
+            field:
+              type: text
+              display: Name
+          -
+            handle: email
+            field:
+              type: text
+              input_type: email
+              display: 'Email Address'
+              listable: true
+              input: email
+          -
+            handle: avatar
+            field:
+              type: assets
+              max_files: 1
+              container: assets
+          -
+            handle: user_roles_field
+            field:
+              mode: default
+              type: user_roles
+              display: 'User Roles Field'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false

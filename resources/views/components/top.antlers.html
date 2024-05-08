@@ -1,0 +1,21 @@
+<nav class="nav d-flex">
+    <a href="/dashboard">
+        <div class="logo">
+            <img src="/assets/logo.png" alt="Ads Logo">
+        </div>
+    </a>
+    <div class="searchbar">
+        <input class="search-nav" type="text" placeholder="Search">
+    </div>
+    <div class="check">
+        <div class="icons-new d-flex">
+            {{ collection:widgets }}
+            <span>
+                {{ icon }}
+                <img class="sm_icons-new" src="{{ url }}" alt="{{ caption }}" />
+                {{ /icon }}
+            </span>
+            {{ /collection:widgets }}
+        </div>
+    </div>
+</nav>

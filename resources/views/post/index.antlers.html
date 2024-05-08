@@ -1,0 +1,79 @@
+<!-- feed starts -->
+<div class="feed">
+    <div class="feed__header">
+        <h2>Newest</h2>
+    </div>
+
+    {{ collection:post }}
+    <!-- post starts -->
+    <div class="post">
+        <div class="post__avatar">
+            <img src="img/doctorpost.png" alt="" />
+        </div>
+
+        <div class="post__body">
+            <div class="post__header">
+                <div class="post__headerText">
+                    <h3>
+                        {{ author:name }}
+                    </h3>
+                </div>
+                <div class="post__headerDescription">
+                    <p>{{ content }}</p>
+                </div>
+            </div>
+            <div class="post__content img__post">
+                <div class="d-flex">
+                {{ assets_field }}
+                    <img src="{{ url }}" alt="{{ caption }}" />
+                {{ /assets_field }}
+                </div>
+            </div>
+            <div class="post__footer">
+                <span class="comment-icons d-flex" style="align-items: center;">
+                    <img class="sm_icons" src="img/commnet_icon.png" alt="">2
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- post ends -->
+    {{ /collection:post }}
+
+    <!-- post starts -->
+    <div class="post">
+        <div class="post__avatar">
+            <img src="img/doctor_post2.png" alt="" />
+        </div>
+        <div class="post__body">
+            <div class="post__header">
+                <div class="post__headerText">
+                    <h3>
+                        額賀龍平　先生 (chuyên gia)
+                        <span class="post__headerSpecial">
+                    </h3>
+                </div>
+                <div class="post__headerDescription">
+                    <p>抜歯後、一時的に熱が出ることはありますよ。
+                        菌血症と呼ばれるものでしょう。一時的に菌が血管に入って熱が出るという反応です。年齢や基礎疾患にもよりますが、通常は何日も発熱が続くことは少ないこと…Read more</p>
+                </div>
+            </div>
+            <div class="post__content d-flex">
+                <img src="img/post2_img.png" alt="" />
+                <div class="d-flex" style="flex-direction: column;">
+                    <img style="width: 100px; height: 70px;" src="img/post2_img2.png" alt="" />
+                    <img style="width: 100px; height: 70px;" src="img/post2_img3.png" alt="" />
+                </div>
+            </div>
+            <div style="background-color: aliceblue; max-width: max-content;">Home＞Q&A từ bệnh nhân＞Nội dung câu hỏi
+            </div>
+            <div class="post__footer">
+                <span class="comment-icons d-flex" style="align-items: center;">
+                    <img class="sm_icons" src="img/commnet_icon.png" alt="">10
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- post ends -->
+
+</div>
+<!-- feed ends -->

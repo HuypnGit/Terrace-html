@@ -1,0 +1,31 @@
+<div class="sidebar">
+    <ul class="left-menu">
+        {{ nav:left-menu }}
+            {{ items }}
+                <li class="menu-item">
+                    <a href="{{ url }}" class="menu-link">{{ title }}</a>
+                </li>
+            {{ /items }}
+        {{ /nav:left-menu }}
+    </ul>
+</div>
+<style>
+    .left-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-item {
+    margin-bottom: 10px;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #333;
+}
+
+.menu-link:hover {
+    color: #007BFF;
+}
+
+</style>

@@ -1,0 +1,20 @@
+name: Huy
+super: true
+avatar: online.png
+id: b33d6960-9cdf-4abb-9526-9e06250896f4
+password_hash: $2y$10$eu8iLTKg0CG/iX1GwjWbAu.jC6cLfGFLLoqf5EU4qB6dCtCtSt46i
+preferences:
+  collections:
+    widgets:
+      columns:
+        - title
+        - author
+        - slug
+        - status
+    comments:
+      columns:
+        - title
+        - author
+        - slug
+        - status
+        - entries_field
