@@ -506,4 +506,5 @@ body {
 
 .icons-new {
   gap: 14px;
+  align-items: center;
 }
