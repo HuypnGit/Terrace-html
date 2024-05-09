@@ -77,7 +77,6 @@ body {
 .feed {
   flex: 0.5;
   padding-right: 20px;
-  padding-top: 20px;
 }
 
 .feed__header {
@@ -85,6 +84,8 @@ body {
   z-index: 100;
   padding: 15px 20px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .feed__header h2 {
@@ -99,6 +100,27 @@ body {
 .feed {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.tabs {
+  display: flex;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.tab-btn {
+  height: 40px;
+  width: 124px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.tab-btn.active {
+  background-color: #edf3fe;
+  color: #163768;
 }
 
 /* tweet box */
@@ -145,7 +167,7 @@ body {
 }
 
 /* post */
-.post__avatar img {
+.post__avatar .avatar_img {
   height: 44px;
 }
 
@@ -297,6 +319,7 @@ body {
 .post__avatar {
   padding: 10px 20px;
   gap: 12px;
+  justify-content: space-between;
 }
 
 /* widgets */
@@ -384,20 +407,6 @@ body {
   padding: 10px;
 }
 
-.tabs {
-  display: flex;
-  gap: 16px;
-}
-
-.tab-btn {
-  padding: 6px;
-}
-
-.tab-btn.active {
-  border-bottom: 1px solid;
-  color: #163768;
-}
-
 .nav-icons {
   margin-right: 20px;
 }
@@ -410,8 +419,29 @@ body {
 }
 
 .user-post {
+  flex: 1;
+}
+
+.user_post_gap{
   gap: 6px;
   align-items: center;
+}
+
+.action__post{
+  align-items: center;
+  gap: 4px;
+}
+
+.post__copy{
+  background-color: #f0f9ff;
+  /* width: 88px; */
+  width: max-content;
+  padding: 6px;
+  height: 28px;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
 }
 
 .nav {
@@ -446,6 +476,11 @@ body {
   width: 24px;
   height: 24px;
   max-width: none !important;
+}
+
+.sm-icon{
+  width: 20px;
+  height: 20px;
 }
 
 .icons-new {

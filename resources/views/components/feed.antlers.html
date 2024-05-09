@@ -2,10 +2,10 @@
   <div class="feed__header">
     <div class="tabs">
       <div id="post" class="tab-btn active">
-        <a href="">Posts</a>
+        <a href="/dashboard">Posts</a>
       </div>
       <div id="content" class="tab-btn">
-        <a href="">Contents</a>
+        <a href="/content">Contents</a>
         <!-- <a href="">{{ collection:count in="post" }}</a> -->
       </div>
     </div>
@@ -15,71 +15,85 @@
   <div class="post">
     <div class="">
       <div class="post__avatar d-flex">
-        <img src="{{ author:avatar }}" alt="avatar">
-        <div class="">
-          <div class="d-flex user-post">
+        <img class="avatar_img" src="{{ author:avatar }}" alt="avatar">
+        <div class="user-post">
+          <div class="d-flex user_post_gap">
             <h3>
               {{ author:name }}
             </h3>
             <div class="dot"></div>
             <span>1s later</span>
           </div>
-          {{ if author:roles }}
-          <ul>
-            {{ author:roles }}
-            <li>{{ value }}</li>
-            {{ /author:roles }}
-          </ul>
-          {{ else }}
-          No roles found for this author.
-          {{ /if }}
+          <div class="roles">
+            {{ if author:roles }}
+            <ul>
+              {{ author:roles }}
+              <li>{{ value }}</li>
+              {{ /author:roles }}
+            </ul>
+            {{ else }}
+            No roles found for this author.
+            {{ /if }}
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="post__body">
-      <div class="post__header">
-        <div class="post__headerText">
-        </div>
-        <div class="post__headerDescription">
-          <p>{{ content }}</p>
-          <p>{{ assets_field | count }}</p>
-        </div>
-      </div>
-      <div class="post__content img__post">
-        <div class="">
-          <div class="post_img__count_{{ assets_field | count }}">
-            {{ assets_field }}
-            <img id="img_post" src="{{ url }}" alt="{{ caption }}" />
-            {{ /assets_field }}
+        <div class="action__post d-flex">
+          <div class="d-flex post__copy">
+            <img class="sm-icon" src="/assets/file_copy.png" alt="Copy">
+            <span>Copy</span>
+          </div>
+          <div class="post__setting">
+            <img src="/assets/more_vert.png" alt="Setting">
+          </div>
+          <div class="post__close">
+            <img src="/assets/close.png" alt="Close">
           </div>
         </div>
       </div>
-      <div class="post__footer">
-        <div class="post_emoji">
-          <div class="d-flex">
-            <img src="/assets/thumb_up.png" alt="">
-            <span>ádsadsa</span>
+      <div class="post__body">
+        <div class="post__header">
+          <div class="post__headerText">
+          </div>
+          <div class="post__headerDescription">
+            <p>{{ content }}</p>
+            <p>{{ assets_field | count }}</p>
           </div>
         </div>
-        <div class="post_action">
-          <span class="comment-icons d-flex">
-            <div class="d-flex" style="gap: 4px;">
-              <img class="sm_icons" src="/assets/thumb_up.png" alt="">
-              <span>いいね！</span>
+        <div class="post__content img__post">
+          <div class="">
+            <div class="post_img__count_{{ assets_field | count }}">
+              {{ assets_field }}
+              <img id="img_post" src="{{ url }}" alt="{{ caption }}" />
+              {{ /assets_field }}
             </div>
-            <div class="d-flex" style="gap: 4px;">
-              <img class="sm_icons" src="/assets/post_add.png" alt="">
-              <span>マイノートに保存する</span>
+          </div>
+        </div>
+        <div class="post__footer">
+          <div class="post_emoji">
+            <div class="d-flex">
+              <img src="/assets/thumb_up.png" alt="">
+              <span>ádsadsa</span>
             </div>
-            <div class="d-flex" style="gap: 4px;">
-              <img class="sm_icons" src="/assets/ios_share.png" alt="">
-              <span>共有</span>
-            </div>
-          </span>
+          </div>
+          <div class="post_action">
+            <span class="comment-icons d-flex">
+              <div class="d-flex" style="gap: 4px;">
+                <img class="sm_icons" src="/assets/thumb_up.png" alt="">
+                <span>いいね！</span>
+              </div>
+              <div class="d-flex" style="gap: 4px;">
+                <img class="sm_icons" src="/assets/post_add.png" alt="">
+                <span>マイノートに保存する</span>
+              </div>
+              <div class="d-flex" style="gap: 4px;">
+                <img class="sm_icons" src="/assets/ios_share.png" alt="">
+                <span>共有</span>
+              </div>
+            </span>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- post ends -->
-  {{ /collection:post }}
-</div>
+    <!-- post ends -->
+    {{ /collection:post }}
+  </div>
