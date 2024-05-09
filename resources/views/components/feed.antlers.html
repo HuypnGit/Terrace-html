@@ -1,12 +1,25 @@
 <div class="feed">
   <div class="feed__header">
-    <div class="tabs">
-      <div id="post" class="tab-btn active">
-        <a href="/dashboard">Posts</a>
+    <div class="feed__tabs">
+      <div class="tabs">
+        <div id="post" class="tab-btn active">
+          <a href="/dashboard">Posts</a>
+        </div>
+        <div id="content" class="tab-btn">
+          <a href="/content">Contents</a>
+          <!-- <a href="">{{ collection:count in="post" }}</a> -->
+        </div>
       </div>
-      <div id="content" class="tab-btn">
-        <a href="/content">Contents</a>
-        <!-- <a href="">{{ collection:count in="post" }}</a> -->
+    </div>
+    <div class="post__info">
+      <div class="">
+        <p>Posts</p>
+      </div>
+      <div class="post__create">
+        <div class="post__create_btn d-flex">
+          <p>Create Post</p>
+          <img src="/assets/add.png" alt="" style="width: 20px; height: 20px;">
+        </div>
       </div>
     </div>
   </div>
