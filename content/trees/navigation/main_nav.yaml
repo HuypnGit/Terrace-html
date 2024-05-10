@@ -19,12 +19,6 @@ tree:
         title: 'Tư vấn lâm sàng'
         url: home
       -
-        id: dce4d53c-32fa-45d9-87c6-5143b2026c24
-        title: 'Liên kết giữa bác sĩ nha khoa và phụ tá'
-        url: '2'
-        data:
-          assets_field: {  }
-      -
         id: 69095905-3b5d-44f8-94a6-45e32c108852
         title: 'Liên kết giữa bác sĩ nha khoa và kỹ thuật viên'
         url: '3'
@@ -39,6 +33,13 @@ tree:
     data:
       assets_field:
         - message.png
+    children:
+      -
+        id: dce4d53c-32fa-45d9-87c6-5143b2026c24
+        title: 'Liên kết giữa bác sĩ nha khoa và phụ tá'
+        url: '2'
+        data:
+          assets_field: {  }
   -
     id: 01bba8f7-74b8-43e3-a5ae-affe108dec0f
     title: 症例供覧

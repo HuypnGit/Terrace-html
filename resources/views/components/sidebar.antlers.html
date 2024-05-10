@@ -13,6 +13,17 @@
                 {{ /assets_field }}
                 {{ title }}
             </span>
+            {{# {{ if children }}
+                <ul>
+                    {{ children }}
+                        <li>
+                            <a href="{{ url }}">
+                                {{ title }}
+                            </a>
+                        </li>
+                    {{ /children }}
+                </ul>
+            {{ /if }} #}}
         </a>
     </div>
     {{ /nav:main_nav }}

@@ -7,7 +7,7 @@
 .page {}
 
 body {
-  background-color: #f0f2f5;
+  background-color: #f0f2f5 !important;
 }
 
 .d-flex {
@@ -466,7 +466,7 @@ body {
 }
 
 .nav {
-  padding: 6px 6%;
+  padding: 6px 6% !important;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #DFDFDF;
