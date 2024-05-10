@@ -77,6 +77,7 @@ body {
 .feed {
   flex: 0.5;
   padding-right: 20px;
+  width: 1140px;
 }
 
 .feed__tabs {
@@ -203,10 +204,9 @@ body {
   background-color: #fff;
 }
 
-/* .post__content img {
-  width: 240px;
-  height: 150px;
-} */
+.post__content {
+  word-wrap: break-word;
+}
 
 .post_img__count_1 {}
 
