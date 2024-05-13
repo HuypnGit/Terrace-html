@@ -10,16 +10,29 @@
     <div class="check">
         <div class="icons-new d-flex">
             <span>
-                <img class="sm_icons-new" src="/assets/notifications.png" />
+                <button class="btn btn-link" data-toggle="popover" data-html="true" title="Notifications" data-content="
+                    <ul>
+                        <li>New message from John</li>
+                        <li>Payment received</li>
+                        <li>Meeting reminder</li>
+                    </ul>">
+                    <img class="sm_icons-new" src="/assets/notifications.png" />
+                </button>
             </span>
             <span>
-                <img class="sm_icons-new" src="/assets/settings.png" />
+                <button class="btn btn-link" data-toggle="popover" data-html="true" title="Settings" data-content="Your settings here">
+                    <img class="sm_icons-new" src="/assets/settings.png" />
+                </button>
             </span>
             <span>
-                <img class="sm_icons-new" src="/assets/help_outline-1.png" />
+                <button class="btn btn-link" data-toggle="popover" data-html="true" title="Help" data-content="Your help info here">
+                    <img class="sm_icons-new" src="/assets/help_outline-1.png" />
+                </button>
             </span>
             <span>
-                <img class="avatar_img" src="{{ author:avatar }}" alt="avatar">
+                <button class="btn btn-link" data-toggle="popover" data-html="true" title="Profile" data-content="Your profile info here">
+                    <img class="avatar_img" src="{{ author:avatar }}" alt="avatar">
+                </button>
             </span>
         </div>
     </div>

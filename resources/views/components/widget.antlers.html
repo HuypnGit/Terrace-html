@@ -1,26 +1,28 @@
 <div class="widgets">
-    <div class="widgets__widgetContainer">
-      <div class="ads">
-        <div class="">
-          <div class="ads-content-block">
-            <div class="ads-title">
-              ADS
-            </div>
-            <div class="">
-              {{ collection:ads limit='3' }}
-              <div class="d-flex ads-content">
-                {{ image }}
-                <img src="{{ url }}" alt="{{ caption }}" />
-                {{ /image }}
-                <div class="content">{{ content }}</div>
-              </div>
-              {{ /collection:ads }}
-            </div>
+  <div class="widgets__widgetContainer">
+    <div class="ads">
+      <div class="">
+        <div class="ads-content-block">
+          <div class="ads-title">
+            ADS
+          </div>
+          <div class="">
+            {{ collection:ads limit='3' }}
+              <a href="{{ slug }}">
+                <div class="d-flex ads-content">
+                  {{ image }}
+                    <img src="{{ url }}" alt="{{ caption }}" />
+                  {{ /image }}
+                  <div class="content">{{ content }}</div>
+                </div>
+              </a>
+            {{ /collection:ads }}
           </div>
         </div>
       </div>
     </div>
-    <!-- <div class="">
+  </div>
+  <!-- <div class="">
       <h2 style="margin: 0 auto; width: max-content;">あなたのコミュニティチャット</h2>
       <div class="post">
         <div class="post__body">
@@ -35,4 +37,4 @@
         </div>
       </div>
     </div> -->
-  </div>
+</div>

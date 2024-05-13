@@ -5,5 +5,6 @@ title: Content
 author: b33d6960-9cdf-4abb-9526-9e06250896f4
 template: content
 updated_by: b33d6960-9cdf-4abb-9526-9e06250896f4
-updated_at: 1715221325
+updated_at: 1715572955
+parent: home
 ---

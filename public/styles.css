@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 
-.page {}
+.page {
+  width: 100%;
+}
 
 body {
   background-color: #f0f2f5 !important;
@@ -77,7 +79,8 @@ body {
 .feed {
   flex: 0.5;
   padding-right: 20px;
-  width: 1140px;
+  max-width: 670px;
+  margin: 0 auto;
 }
 
 .feed__tabs {
@@ -333,8 +336,7 @@ body {
 
 .post_action .comment-icons {
   align-items: center;
-  gap: 269px;
-  justify-content: center
+  gap: 20px;
 }
 
 .post__avatar {
@@ -406,7 +408,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 360px;
   padding-right: 20px;
-  /* box-shadow: 4px 4px 19px -15px #111 inset; */
+  width: 100%;
 }
 
 .ads {}
@@ -463,6 +465,15 @@ body {
   justify-content: center;
   align-items: center;
   gap: 4px;
+  cursor: pointer;
+}
+
+.post__setting{
+  cursor: pointer;
+}
+
+.post__close{
+  cursor: pointer;
 }
 
 .nav {

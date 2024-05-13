@@ -1,10 +1,19 @@
 tree:
   -
     id: 9e28a3e7-39f0-4eaa-9425-1d88340431f5
-    title: text1
+    title: インプラント学会
+    data:
+      assets_field:
+        - shape_line.png
   -
     id: 81d773dc-d37a-4852-9119-800c1d5daf2a
-    title: text2
+    title: "東京医科歯科大学 \L研修指導医コミュニティ"
+    data:
+      assets_field:
+        - maps_home_work.png
   -
     id: 3385c696-e6f4-4eca-a980-b353ad3f29d2
-    title: text3
+    title: Neustadjapan
+    data:
+      assets_field:
+        - neustadjapan.png

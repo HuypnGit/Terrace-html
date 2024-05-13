@@ -1,10 +1,10 @@
 ---
 id: fd79fb0a-cd88-4ae0-bfe1-cb34185c1c08
 blueprint: ad
-title: Admin
+title: 'ADS 123213'
 author: b33d6960-9cdf-4abb-9526-9e06250896f4
 updated_by: b33d6960-9cdf-4abb-9526-9e06250896f4
-updated_at: 1715332511
+updated_at: 1715574067
 image:
   - first_ads.png
 ---

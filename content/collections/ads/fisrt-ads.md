@@ -4,7 +4,7 @@ blueprint: ad
 title: 'Fisrt Ads'
 author: b33d6960-9cdf-4abb-9526-9e06250896f4
 updated_by: b33d6960-9cdf-4abb-9526-9e06250896f4
-updated_at: 1714796832
+updated_at: 1715573707
 image:
   - first_ads.png
 ---
