@@ -140,7 +140,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 9px;
+  border-radius:8px;
   color: #fff;
   padding: 12px;
 }
@@ -477,7 +477,7 @@ body {
 }
 
 .nav {
-  padding: 6px 6% !important;
+  padding: 6px 12% !important;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #DFDFDF;
