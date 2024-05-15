@@ -78,7 +78,6 @@ body {
 /* feed */
 .feed {
   flex: 0.5;
-  padding-right: 20px;
   max-width: 670px;
   margin: 0 auto;
 }
